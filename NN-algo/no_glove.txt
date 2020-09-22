@@ -1,0 +1,834 @@
+/Users/judy/anaconda3/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:516: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/Users/judy/anaconda3/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:517: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/Users/judy/anaconda3/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:518: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/Users/judy/anaconda3/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:519: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/Users/judy/anaconda3/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:520: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/Users/judy/anaconda3/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:525: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+/Users/judy/anaconda3/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:541: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/Users/judy/anaconda3/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:542: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/Users/judy/anaconda3/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:543: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/Users/judy/anaconda3/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:544: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/Users/judy/anaconda3/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:545: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/Users/judy/anaconda3/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:550: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+Loading data...
+Not using GloVe
+WARNING:tensorflow:From train.py:68: VocabularyProcessor.__init__ (from tensorflow.contrib.learn.python.learn.preprocessing.text) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use tensorflow/transform or tf.data.
+WARNING:tensorflow:From /Users/judy/anaconda3/lib/python3.7/site-packages/tensorflow/contrib/learn/python/learn/preprocessing/text.py:154: CategoricalVocabulary.__init__ (from tensorflow.contrib.learn.python.learn.preprocessing.categorical_vocabulary) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use tensorflow/transform or tf.data.
+WARNING:tensorflow:From /Users/judy/anaconda3/lib/python3.7/site-packages/tensorflow/contrib/learn/python/learn/preprocessing/text.py:170: tokenizer (from tensorflow.contrib.learn.python.learn.preprocessing.text) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use tensorflow/transform or tf.data.
+Vocabulary Size: 33692
+Train/Dev split: 9000/1000
+WARNING:tensorflow:From train.py:137: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+WARNING:tensorflow:From train.py:138: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2020-06-18 20:25:31.276651: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+WARNING:tensorflow:From /Users/judy/Desktop/CS291K/cnn_lstm.py:9: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:From /Users/judy/Desktop/CS291K/cnn_lstm.py:18: The name tf.random_uniform is deprecated. Please use tf.random.uniform instead.
+
+WARNING:tensorflow:From /Users/judy/Desktop/CS291K/cnn_lstm.py:28: The name tf.truncated_normal is deprecated. Please use tf.random.truncated_normal instead.
+
+WARNING:tensorflow:From /Users/judy/Desktop/CS291K/cnn_lstm.py:34: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+WARNING:tensorflow:From /Users/judy/Desktop/CS291K/cnn_lstm.py:44: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+WARNING:tensorflow:From /Users/judy/Desktop/CS291K/cnn_lstm.py:47: LSTMCell.__init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.LSTMCell, and will be replaced by that in Tensorflow 2.0.
+WARNING:tensorflow:From /Users/judy/Desktop/CS291K/cnn_lstm.py:49: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+WARNING:tensorflow:From /Users/judy/anaconda3/lib/python3.7/site-packages/tensorflow/python/ops/init_ops.py:1251: calling VarianceScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /Users/judy/anaconda3/lib/python3.7/site-packages/tensorflow/python/ops/rnn_cell_impl.py:961: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:Entity <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x1a38bad8d0>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x1a38bad8d0>>: AttributeError: module 'gast' has no attribute 'Num'
+WARNING:tensorflow:From /Users/judy/Desktop/CS291K/cnn_lstm.py:62: The name tf.nn.xw_plus_b is deprecated. Please use tf.compat.v1.nn.xw_plus_b instead.
+
+WARNING:tensorflow:From /Users/judy/Desktop/CS291K/cnn_lstm.py:66: softmax_cross_entropy_with_logits (from tensorflow.python.ops.nn_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+
+Future major versions of TensorFlow will allow gradients to flow
+into the labels input on backprop by default.
+
+See `tf.nn.softmax_cross_entropy_with_logits_v2`.
+
+(!) LOADED CNN-LSTM! :)
+WARNING:tensorflow:From train.py:156: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+/Users/judy/anaconda3/lib/python3.7/site-packages/tensorflow/python/ops/gradients_util.py:93: UserWarning: Converting sparse IndexedSlices to a dense Tensor of unknown shape. This may consume a large amount of memory.
+  "Converting sparse IndexedSlices to a dense Tensor of unknown shape. "
+WARNING:tensorflow:From train.py:164: The name tf.summary.histogram is deprecated. Please use tf.compat.v1.summary.histogram instead.
+
+WARNING:tensorflow:From train.py:165: The name tf.summary.scalar is deprecated. Please use tf.compat.v1.summary.scalar instead.
+
+WARNING:tensorflow:From train.py:168: The name tf.summary.merge is deprecated. Please use tf.compat.v1.summary.merge instead.
+
+Writing to /Users/judy/Desktop/CS291K/runs/1592526332
+
+WARNING:tensorflow:From train.py:182: The name tf.summary.FileWriter is deprecated. Please use tf.compat.v1.summary.FileWriter instead.
+
+WARNING:tensorflow:From train.py:194: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+2020-06-18T20:25:33.974085: step 1, loss 1.66199, acc 0.578125
+WARNING:tensorflow:From train.py:240: The name tf.train.global_step is deprecated. Please use tf.compat.v1.train.global_step instead.
+
+2020-06-18T20:25:34.319124: step 2, loss 1.38807, acc 0.460938
+2020-06-18T20:25:34.674600: step 3, loss 0.78148, acc 0.5625
+2020-06-18T20:25:35.097529: step 4, loss 0.722217, acc 0.523438
+2020-06-18T20:25:35.378972: step 5, loss 0.965253, acc 0.546875
+2020-06-18T20:25:35.651755: step 6, loss 1.13965, acc 0.476562
+2020-06-18T20:25:35.901447: step 7, loss 0.885573, acc 0.539062
+2020-06-18T20:25:36.172849: step 8, loss 0.843424, acc 0.46875
+2020-06-18T20:25:36.453902: step 9, loss 0.752592, acc 0.492188
+2020-06-18T20:25:36.677188: step 10, loss 0.705382, acc 0.515625
+2020-06-18T20:25:36.868852: step 11, loss 0.732541, acc 0.460938
+2020-06-18T20:25:37.064595: step 12, loss 0.717177, acc 0.476562
+2020-06-18T20:25:37.267198: step 13, loss 0.712234, acc 0.539062
+2020-06-18T20:25:37.460784: step 14, loss 0.698128, acc 0.5625
+2020-06-18T20:25:37.662523: step 15, loss 0.73522, acc 0.523438
+2020-06-18T20:25:37.849435: step 16, loss 0.738309, acc 0.515625
+2020-06-18T20:25:38.037510: step 17, loss 0.765463, acc 0.476562
+2020-06-18T20:25:38.245476: step 18, loss 0.710273, acc 0.554688
+2020-06-18T20:25:38.493867: step 19, loss 0.722646, acc 0.492188
+2020-06-18T20:25:38.783475: step 20, loss 0.706967, acc 0.539062
+2020-06-18T20:25:39.071163: step 21, loss 0.700924, acc 0.523438
+2020-06-18T20:25:39.352946: step 22, loss 0.706042, acc 0.53125
+2020-06-18T20:25:39.631632: step 23, loss 0.695277, acc 0.5625
+2020-06-18T20:25:40.049242: step 24, loss 0.668819, acc 0.632812
+2020-06-18T20:25:40.392563: step 25, loss 0.679517, acc 0.609375
+2020-06-18T20:25:40.647790: step 26, loss 0.695436, acc 0.53125
+2020-06-18T20:25:40.906313: step 27, loss 0.692223, acc 0.554688
+2020-06-18T20:25:41.165313: step 28, loss 0.67281, acc 0.539062
+2020-06-18T20:25:41.410674: step 29, loss 0.731831, acc 0.445312
+2020-06-18T20:25:41.651223: step 30, loss 0.708893, acc 0.484375
+2020-06-18T20:25:41.865802: step 31, loss 0.688948, acc 0.515625
+2020-06-18T20:25:42.079611: step 32, loss 0.703134, acc 0.5
+2020-06-18T20:25:42.322871: step 33, loss 0.677141, acc 0.554688
+2020-06-18T20:25:42.587702: step 34, loss 0.662478, acc 0.609375
+2020-06-18T20:25:42.827705: step 35, loss 0.687623, acc 0.578125
+2020-06-18T20:25:43.085348: step 36, loss 0.668825, acc 0.609375
+2020-06-18T20:25:43.325676: step 37, loss 0.684188, acc 0.554688
+2020-06-18T20:25:43.579489: step 38, loss 0.669639, acc 0.570312
+2020-06-18T20:25:43.767830: step 39, loss 0.656518, acc 0.648438
+2020-06-18T20:25:43.949887: step 40, loss 0.6815, acc 0.59375
+2020-06-18T20:25:44.132666: step 41, loss 0.683903, acc 0.546875
+2020-06-18T20:25:44.328226: step 42, loss 0.649877, acc 0.640625
+2020-06-18T20:25:44.520551: step 43, loss 0.645554, acc 0.640625
+2020-06-18T20:25:44.716056: step 44, loss 0.677064, acc 0.609375
+2020-06-18T20:25:44.902330: step 45, loss 0.630128, acc 0.664062
+2020-06-18T20:25:45.088717: step 46, loss 0.658261, acc 0.5625
+2020-06-18T20:25:45.279744: step 47, loss 0.627972, acc 0.648438
+2020-06-18T20:25:45.467688: step 48, loss 0.683802, acc 0.53125
+2020-06-18T20:25:45.648604: step 49, loss 0.655713, acc 0.585938
+2020-06-18T20:25:45.833603: step 50, loss 0.631518, acc 0.65625
+2020-06-18T20:25:46.066424: step 51, loss 0.606659, acc 0.679688
+2020-06-18T20:25:46.268627: step 52, loss 0.617055, acc 0.671875
+2020-06-18T20:25:46.467027: step 53, loss 0.609846, acc 0.679688
+2020-06-18T20:25:46.651541: step 54, loss 0.625538, acc 0.679688
+2020-06-18T20:25:46.838217: step 55, loss 0.619631, acc 0.648438
+2020-06-18T20:25:47.024544: step 56, loss 0.603888, acc 0.65625
+2020-06-18T20:25:47.209730: step 57, loss 0.585672, acc 0.726562
+2020-06-18T20:25:47.408876: step 58, loss 0.576314, acc 0.71875
+2020-06-18T20:25:47.588514: step 59, loss 0.551463, acc 0.726562
+2020-06-18T20:25:47.775339: step 60, loss 0.56801, acc 0.703125
+2020-06-18T20:25:47.961883: step 61, loss 0.615642, acc 0.617188
+2020-06-18T20:25:48.164514: step 62, loss 0.59491, acc 0.648438
+2020-06-18T20:25:48.361556: step 63, loss 0.577009, acc 0.703125
+2020-06-18T20:25:48.552617: step 64, loss 0.596249, acc 0.671875
+2020-06-18T20:25:48.759067: step 65, loss 0.527618, acc 0.835938
+2020-06-18T20:25:48.944481: step 66, loss 0.559908, acc 0.734375
+2020-06-18T20:25:49.133527: step 67, loss 0.50164, acc 0.773438
+2020-06-18T20:25:49.327598: step 68, loss 0.529111, acc 0.757812
+2020-06-18T20:25:49.525005: step 69, loss 0.537075, acc 0.75
+2020-06-18T20:25:49.723236: step 70, loss 0.544306, acc 0.734375
+2020-06-18T20:25:49.831747: step 71, loss 0.473286, acc 0.875
+2020-06-18T20:25:50.026633: step 72, loss 0.439329, acc 0.875
+2020-06-18T20:25:50.216190: step 73, loss 0.489378, acc 0.789062
+2020-06-18T20:25:50.431131: step 74, loss 0.477937, acc 0.757812
+2020-06-18T20:25:50.627377: step 75, loss 0.459559, acc 0.789062
+2020-06-18T20:25:50.873056: step 76, loss 0.429109, acc 0.835938
+2020-06-18T20:25:51.079384: step 77, loss 0.459118, acc 0.820312
+2020-06-18T20:25:51.279999: step 78, loss 0.463092, acc 0.84375
+2020-06-18T20:25:51.489484: step 79, loss 0.373308, acc 0.851562
+2020-06-18T20:25:51.701624: step 80, loss 0.370995, acc 0.867188
+2020-06-18T20:25:51.898183: step 81, loss 0.346215, acc 0.882812
+2020-06-18T20:25:52.102084: step 82, loss 0.346404, acc 0.914062
+2020-06-18T20:25:52.299816: step 83, loss 0.372422, acc 0.851562
+2020-06-18T20:25:52.499448: step 84, loss 0.362275, acc 0.898438
+2020-06-18T20:25:52.698384: step 85, loss 0.32153, acc 0.890625
+2020-06-18T20:25:52.886739: step 86, loss 0.323177, acc 0.914062
+2020-06-18T20:25:53.073240: step 87, loss 0.33626, acc 0.882812
+2020-06-18T20:25:53.259870: step 88, loss 0.309806, acc 0.882812
+2020-06-18T20:25:53.466121: step 89, loss 0.287106, acc 0.921875
+2020-06-18T20:25:53.653244: step 90, loss 0.301287, acc 0.890625
+2020-06-18T20:25:53.839640: step 91, loss 0.296361, acc 0.898438
+2020-06-18T20:25:54.040087: step 92, loss 0.209841, acc 0.953125
+2020-06-18T20:25:54.238278: step 93, loss 0.232261, acc 0.914062
+2020-06-18T20:25:54.434595: step 94, loss 0.232612, acc 0.921875
+2020-06-18T20:25:54.619997: step 95, loss 0.252227, acc 0.921875
+2020-06-18T20:25:54.805931: step 96, loss 0.214594, acc 0.921875
+2020-06-18T20:25:55.004172: step 97, loss 0.231725, acc 0.921875
+2020-06-18T20:25:55.192493: step 98, loss 0.174016, acc 0.953125
+2020-06-18T20:25:55.385901: step 99, loss 0.164944, acc 0.953125
+2020-06-18T20:25:55.578990: step 100, loss 0.105626, acc 0.984375
+
+Evaluation:
+2020-06-18T20:25:55.926129: step 100, loss 0.222462, acc 0.918
+
+2020-06-18T20:25:56.136265: step 101, loss 0.29431, acc 0.882812
+2020-06-18T20:25:56.349302: step 102, loss 0.221674, acc 0.914062
+2020-06-18T20:25:56.537990: step 103, loss 0.207323, acc 0.914062
+2020-06-18T20:25:56.742018: step 104, loss 0.197712, acc 0.9375
+2020-06-18T20:25:56.990832: step 105, loss 0.110691, acc 0.992188
+2020-06-18T20:25:57.216945: step 106, loss 0.137916, acc 0.960938
+2020-06-18T20:25:57.413929: step 107, loss 0.0906392, acc 0.976562
+2020-06-18T20:25:57.604488: step 108, loss 0.240496, acc 0.929688
+2020-06-18T20:25:57.811182: step 109, loss 0.0787236, acc 0.992188
+2020-06-18T20:25:58.012310: step 110, loss 0.117455, acc 0.953125
+2020-06-18T20:25:58.205124: step 111, loss 0.0516258, acc 0.984375
+2020-06-18T20:25:58.418880: step 112, loss 0.139743, acc 0.960938
+2020-06-18T20:25:58.610942: step 113, loss 0.127407, acc 0.960938
+2020-06-18T20:25:58.809047: step 114, loss 0.124127, acc 0.960938
+2020-06-18T20:25:59.017975: step 115, loss 0.0701999, acc 0.976562
+2020-06-18T20:25:59.208226: step 116, loss 0.0889761, acc 0.976562
+2020-06-18T20:25:59.410295: step 117, loss 0.0593461, acc 0.984375
+2020-06-18T20:25:59.602505: step 118, loss 0.0577262, acc 0.984375
+2020-06-18T20:25:59.813246: step 119, loss 0.130621, acc 0.953125
+2020-06-18T20:26:00.006198: step 120, loss 0.0792707, acc 0.976562
+2020-06-18T20:26:00.199543: step 121, loss 0.0692495, acc 0.976562
+2020-06-18T20:26:00.419587: step 122, loss 0.108648, acc 0.953125
+2020-06-18T20:26:00.607302: step 123, loss 0.0405559, acc 0.992188
+2020-06-18T20:26:00.804671: step 124, loss 0.103058, acc 0.960938
+2020-06-18T20:26:01.017801: step 125, loss 0.071492, acc 0.960938
+2020-06-18T20:26:01.208235: step 126, loss 0.0959675, acc 0.96875
+2020-06-18T20:26:01.415981: step 127, loss 0.0505664, acc 0.984375
+2020-06-18T20:26:01.648262: step 128, loss 0.0795739, acc 0.976562
+2020-06-18T20:26:01.851255: step 129, loss 0.0311262, acc 0.992188
+2020-06-18T20:26:02.053019: step 130, loss 0.0270487, acc 0.992188
+2020-06-18T20:26:02.255203: step 131, loss 0.0951763, acc 0.96875
+2020-06-18T20:26:02.461637: step 132, loss 0.0207947, acc 1
+2020-06-18T20:26:02.660195: step 133, loss 0.0617406, acc 0.976562
+2020-06-18T20:26:02.855217: step 134, loss 0.0431942, acc 0.984375
+2020-06-18T20:26:03.046645: step 135, loss 0.05922, acc 0.984375
+2020-06-18T20:26:03.248513: step 136, loss 0.00327154, acc 1
+2020-06-18T20:26:03.441796: step 137, loss 0.0214485, acc 0.984375
+2020-06-18T20:26:03.630888: step 138, loss 0.00248128, acc 1
+2020-06-18T20:26:03.825338: step 139, loss 0.00369601, acc 1
+2020-06-18T20:26:04.021811: step 140, loss 0.030222, acc 0.984375
+2020-06-18T20:26:04.208021: step 141, loss 0.00622183, acc 1
+2020-06-18T20:26:04.303459: step 142, loss 0.0105679, acc 1
+2020-06-18T20:26:04.495621: step 143, loss 0.00634633, acc 1
+2020-06-18T20:26:04.687299: step 144, loss 0.0241583, acc 0.992188
+2020-06-18T20:26:04.873560: step 145, loss 0.00808221, acc 1
+2020-06-18T20:26:05.056061: step 146, loss 0.00544666, acc 1
+2020-06-18T20:26:05.246256: step 147, loss 0.0077488, acc 1
+2020-06-18T20:26:05.432321: step 148, loss 0.00219136, acc 1
+2020-06-18T20:26:05.638146: step 149, loss 0.00181111, acc 1
+2020-06-18T20:26:05.822548: step 150, loss 0.000978238, acc 1
+2020-06-18T20:26:06.005061: step 151, loss 0.0492298, acc 0.984375
+2020-06-18T20:26:06.206515: step 152, loss 0.00084959, acc 1
+2020-06-18T20:26:06.446830: step 153, loss 0.0024108, acc 1
+2020-06-18T20:26:06.681095: step 154, loss 0.000756971, acc 1
+2020-06-18T20:26:06.906324: step 155, loss 0.0201228, acc 0.992188
+2020-06-18T20:26:07.090982: step 156, loss 0.0368007, acc 0.992188
+2020-06-18T20:26:07.272829: step 157, loss 0.00383151, acc 1
+2020-06-18T20:26:07.461163: step 158, loss 0.00258676, acc 1
+2020-06-18T20:26:07.651676: step 159, loss 0.00328396, acc 1
+2020-06-18T20:26:07.834309: step 160, loss 0.0949013, acc 0.992188
+2020-06-18T20:26:08.022139: step 161, loss 0.00121844, acc 1
+2020-06-18T20:26:08.220839: step 162, loss 0.020165, acc 0.984375
+2020-06-18T20:26:08.408399: step 163, loss 0.0185025, acc 0.992188
+2020-06-18T20:26:08.599765: step 164, loss 0.00117642, acc 1
+2020-06-18T20:26:08.786780: step 165, loss 0.00211759, acc 1
+2020-06-18T20:26:08.986374: step 166, loss 0.00278892, acc 1
+2020-06-18T20:26:09.176430: step 167, loss 0.00297139, acc 1
+2020-06-18T20:26:09.419875: step 168, loss 0.00446085, acc 1
+2020-06-18T20:26:09.678568: step 169, loss 0.00349674, acc 1
+2020-06-18T20:26:09.944106: step 170, loss 0.00352686, acc 1
+2020-06-18T20:26:10.184370: step 171, loss 0.00294555, acc 1
+2020-06-18T20:26:10.418641: step 172, loss 0.00246765, acc 1
+2020-06-18T20:26:10.604611: step 173, loss 0.00177181, acc 1
+2020-06-18T20:26:10.834751: step 174, loss 0.00151551, acc 1
+2020-06-18T20:26:11.124368: step 175, loss 0.00163379, acc 1
+2020-06-18T20:26:11.396278: step 176, loss 0.00366883, acc 1
+2020-06-18T20:26:11.650503: step 177, loss 0.00109075, acc 1
+2020-06-18T20:26:11.914369: step 178, loss 0.00131838, acc 1
+2020-06-18T20:26:12.182243: step 179, loss 0.00451426, acc 1
+2020-06-18T20:26:12.375735: step 180, loss 0.00171126, acc 1
+2020-06-18T20:26:12.615069: step 181, loss 0.00100466, acc 1
+2020-06-18T20:26:12.798236: step 182, loss 0.000972873, acc 1
+2020-06-18T20:26:12.987447: step 183, loss 0.00070175, acc 1
+2020-06-18T20:26:13.172015: step 184, loss 0.000861227, acc 1
+2020-06-18T20:26:13.442227: step 185, loss 0.00251169, acc 1
+2020-06-18T20:26:13.630567: step 186, loss 0.000722706, acc 1
+2020-06-18T20:26:13.868922: step 187, loss 0.000435451, acc 1
+2020-06-18T20:26:14.157110: step 188, loss 0.000781024, acc 1
+2020-06-18T20:26:14.394015: step 189, loss 0.000547842, acc 1
+2020-06-18T20:26:14.691220: step 190, loss 0.000716147, acc 1
+2020-06-18T20:26:14.950013: step 191, loss 0.000353653, acc 1
+2020-06-18T20:26:15.204328: step 192, loss 0.000450569, acc 1
+2020-06-18T20:26:15.444900: step 193, loss 0.00048028, acc 1
+2020-06-18T20:26:15.708462: step 194, loss 0.000345707, acc 1
+2020-06-18T20:26:15.952251: step 195, loss 0.000314778, acc 1
+2020-06-18T20:26:16.192359: step 196, loss 0.00037142, acc 1
+2020-06-18T20:26:16.433171: step 197, loss 0.000299557, acc 1
+2020-06-18T20:26:16.731617: step 198, loss 0.00316123, acc 1
+2020-06-18T20:26:16.947166: step 199, loss 0.000373218, acc 1
+2020-06-18T20:26:17.164715: step 200, loss 0.00214971, acc 1
+
+Evaluation:
+2020-06-18T20:26:17.393520: step 200, loss 0.000394339, acc 1
+
+2020-06-18T20:26:17.596494: step 201, loss 0.000356926, acc 1
+2020-06-18T20:26:17.810768: step 202, loss 0.000493665, acc 1
+2020-06-18T20:26:18.012783: step 203, loss 0.000776381, acc 1
+2020-06-18T20:26:18.199446: step 204, loss 0.00894707, acc 1
+2020-06-18T20:26:18.402111: step 205, loss 0.0503011, acc 0.984375
+2020-06-18T20:26:18.591240: step 206, loss 0.0590654, acc 0.96875
+2020-06-18T20:26:18.785108: step 207, loss 0.00200775, acc 1
+2020-06-18T20:26:18.994629: step 208, loss 0.0104732, acc 0.992188
+2020-06-18T20:26:19.198164: step 209, loss 0.0124486, acc 0.992188
+2020-06-18T20:26:19.395683: step 210, loss 0.00491861, acc 1
+2020-06-18T20:26:19.584564: step 211, loss 0.00218846, acc 1
+2020-06-18T20:26:19.789272: step 212, loss 0.00216026, acc 1
+2020-06-18T20:26:19.879461: step 213, loss 0.00273354, acc 1
+2020-06-18T20:26:20.085121: step 214, loss 0.00413015, acc 1
+2020-06-18T20:26:20.279140: step 215, loss 0.003628, acc 1
+2020-06-18T20:26:20.473219: step 216, loss 0.00489638, acc 1
+2020-06-18T20:26:20.666076: step 217, loss 0.00213066, acc 1
+2020-06-18T20:26:20.855877: step 218, loss 0.00335677, acc 1
+2020-06-18T20:26:21.061013: step 219, loss 0.00207196, acc 1
+2020-06-18T20:26:21.255027: step 220, loss 0.00101062, acc 1
+2020-06-18T20:26:21.434351: step 221, loss 0.00342026, acc 1
+2020-06-18T20:26:21.723662: step 222, loss 0.000500325, acc 1
+2020-06-18T20:26:21.987593: step 223, loss 0.000390728, acc 1
+2020-06-18T20:26:22.170462: step 224, loss 0.000261276, acc 1
+2020-06-18T20:26:22.360419: step 225, loss 0.000256877, acc 1
+2020-06-18T20:26:22.536543: step 226, loss 0.000184012, acc 1
+2020-06-18T20:26:22.726221: step 227, loss 0.000115176, acc 1
+2020-06-18T20:26:22.911007: step 228, loss 0.000165818, acc 1
+2020-06-18T20:26:23.101099: step 229, loss 0.00429048, acc 1
+2020-06-18T20:26:23.281823: step 230, loss 0.000122316, acc 1
+2020-06-18T20:26:23.469480: step 231, loss 0.00021641, acc 1
+2020-06-18T20:26:23.679642: step 232, loss 0.0001233, acc 1
+2020-06-18T20:26:23.869742: step 233, loss 0.000127294, acc 1
+2020-06-18T20:26:24.060699: step 234, loss 0.0527602, acc 0.992188
+2020-06-18T20:26:24.265931: step 235, loss 0.000125886, acc 1
+2020-06-18T20:26:24.452818: step 236, loss 0.000190139, acc 1
+2020-06-18T20:26:24.646433: step 237, loss 0.00375535, acc 1
+2020-06-18T20:26:24.858055: step 238, loss 0.000301619, acc 1
+2020-06-18T20:26:25.104410: step 239, loss 0.000350259, acc 1
+2020-06-18T20:26:25.300836: step 240, loss 0.00050682, acc 1
+2020-06-18T20:26:25.510273: step 241, loss 0.001126, acc 1
+2020-06-18T20:26:25.701741: step 242, loss 0.000713438, acc 1
+2020-06-18T20:26:25.967456: step 243, loss 0.0271446, acc 0.992188
+2020-06-18T20:26:26.177649: step 244, loss 0.00117847, acc 1
+2020-06-18T20:26:26.380732: step 245, loss 0.00216547, acc 1
+2020-06-18T20:26:26.581589: step 246, loss 0.00186895, acc 1
+2020-06-18T20:26:26.849260: step 247, loss 0.00114614, acc 1
+2020-06-18T20:26:27.104386: step 248, loss 0.00126747, acc 1
+2020-06-18T20:26:27.296947: step 249, loss 0.00116453, acc 1
+2020-06-18T20:26:27.566512: step 250, loss 0.000637985, acc 1
+2020-06-18T20:26:27.836570: step 251, loss 0.00427667, acc 1
+2020-06-18T20:26:28.099283: step 252, loss 0.000820488, acc 1
+2020-06-18T20:26:28.386329: step 253, loss 0.000403316, acc 1
+2020-06-18T20:26:28.589728: step 254, loss 0.000258299, acc 1
+2020-06-18T20:26:28.783804: step 255, loss 0.000198141, acc 1
+2020-06-18T20:26:28.977337: step 256, loss 0.000202525, acc 1
+2020-06-18T20:26:29.187112: step 257, loss 0.000268566, acc 1
+2020-06-18T20:26:29.433531: step 258, loss 0.000100966, acc 1
+2020-06-18T20:26:29.701090: step 259, loss 6.28305e-05, acc 1
+2020-06-18T20:26:29.944924: step 260, loss 0.000130405, acc 1
+2020-06-18T20:26:30.143765: step 261, loss 0.00475236, acc 1
+2020-06-18T20:26:30.369304: step 262, loss 7.75582e-05, acc 1
+2020-06-18T20:26:30.632897: step 263, loss 4.91668e-05, acc 1
+2020-06-18T20:26:30.898157: step 264, loss 0.000129604, acc 1
+2020-06-18T20:26:31.172892: step 265, loss 0.000496132, acc 1
+2020-06-18T20:26:31.430748: step 266, loss 6.46868e-05, acc 1
+2020-06-18T20:26:31.628827: step 267, loss 0.0309408, acc 0.992188
+2020-06-18T20:26:31.821516: step 268, loss 0.000118527, acc 1
+2020-06-18T20:26:32.154085: step 269, loss 0.000266037, acc 1
+2020-06-18T20:26:32.408113: step 270, loss 0.000463811, acc 1
+2020-06-18T20:26:32.616341: step 271, loss 0.000661167, acc 1
+2020-06-18T20:26:32.898956: step 272, loss 0.00101095, acc 1
+2020-06-18T20:26:33.196488: step 273, loss 0.00158476, acc 1
+2020-06-18T20:26:33.440299: step 274, loss 0.00394394, acc 1
+2020-06-18T20:26:33.643813: step 275, loss 0.00185967, acc 1
+2020-06-18T20:26:33.862137: step 276, loss 0.00177838, acc 1
+2020-06-18T20:26:34.068335: step 277, loss 0.00257146, acc 1
+2020-06-18T20:26:34.273467: step 278, loss 0.00131028, acc 1
+2020-06-18T20:26:34.504976: step 279, loss 0.00135151, acc 1
+2020-06-18T20:26:34.713133: step 280, loss 0.0314448, acc 0.992188
+2020-06-18T20:26:34.918039: step 281, loss 0.0025205, acc 1
+2020-06-18T20:26:35.130984: step 282, loss 0.000431096, acc 1
+2020-06-18T20:26:35.333596: step 283, loss 0.00622179, acc 1
+2020-06-18T20:26:35.438472: step 284, loss 0.00042152, acc 1
+2020-06-18T20:26:35.647813: step 285, loss 0.00111128, acc 1
+2020-06-18T20:26:35.862785: step 286, loss 0.000373958, acc 1
+2020-06-18T20:26:36.055920: step 287, loss 0.000270027, acc 1
+2020-06-18T20:26:36.246274: step 288, loss 0.000346428, acc 1
+2020-06-18T20:26:36.439858: step 289, loss 0.000308919, acc 1
+2020-06-18T20:26:36.646261: step 290, loss 0.000268891, acc 1
+2020-06-18T20:26:36.840156: step 291, loss 0.000230565, acc 1
+2020-06-18T20:26:37.032657: step 292, loss 0.000241894, acc 1
+2020-06-18T20:26:37.232183: step 293, loss 0.000190281, acc 1
+2020-06-18T20:26:37.433520: step 294, loss 0.000166649, acc 1
+2020-06-18T20:26:37.636827: step 295, loss 0.000124183, acc 1
+2020-06-18T20:26:37.842221: step 296, loss 0.000145571, acc 1
+2020-06-18T20:26:38.040899: step 297, loss 0.000133984, acc 1
+2020-06-18T20:26:38.236382: step 298, loss 0.000109603, acc 1
+2020-06-18T20:26:38.438923: step 299, loss 0.028404, acc 0.992188
+2020-06-18T20:26:38.650563: step 300, loss 0.000176984, acc 1
+
+Evaluation:
+2020-06-18T20:26:38.868382: step 300, loss 0.000334443, acc 1
+
+2020-06-18T20:26:39.065636: step 301, loss 0.000146656, acc 1
+2020-06-18T20:26:39.262823: step 302, loss 0.000165218, acc 1
+2020-06-18T20:26:39.477196: step 303, loss 0.00021569, acc 1
+2020-06-18T20:26:39.679541: step 304, loss 0.000440703, acc 1
+2020-06-18T20:26:39.867148: step 305, loss 0.000490133, acc 1
+2020-06-18T20:26:40.074222: step 306, loss 0.000436773, acc 1
+2020-06-18T20:26:40.277334: step 307, loss 0.000467797, acc 1
+2020-06-18T20:26:40.474004: step 308, loss 0.000507407, acc 1
+2020-06-18T20:26:40.684582: step 309, loss 0.000502642, acc 1
+2020-06-18T20:26:40.871012: step 310, loss 0.000381028, acc 1
+2020-06-18T20:26:41.068595: step 311, loss 0.000395953, acc 1
+2020-06-18T20:26:41.275397: step 312, loss 0.000490656, acc 1
+2020-06-18T20:26:41.470395: step 313, loss 0.000441698, acc 1
+2020-06-18T20:26:41.668461: step 314, loss 0.00046481, acc 1
+2020-06-18T20:26:41.857799: step 315, loss 0.00112021, acc 1
+2020-06-18T20:26:42.058032: step 316, loss 0.000314788, acc 1
+2020-06-18T20:26:42.270355: step 317, loss 0.000246581, acc 1
+2020-06-18T20:26:42.476225: step 318, loss 0.000153536, acc 1
+2020-06-18T20:26:42.687245: step 319, loss 0.000271652, acc 1
+2020-06-18T20:26:42.881150: step 320, loss 0.000140383, acc 1
+2020-06-18T20:26:43.083002: step 321, loss 0.000135226, acc 1
+2020-06-18T20:26:43.299620: step 322, loss 7.24514e-05, acc 1
+2020-06-18T20:26:43.506377: step 323, loss 8.35224e-05, acc 1
+2020-06-18T20:26:43.706462: step 324, loss 7.93496e-05, acc 1
+2020-06-18T20:26:43.900022: step 325, loss 8.514e-05, acc 1
+2020-06-18T20:26:44.106465: step 326, loss 6.43222e-05, acc 1
+2020-06-18T20:26:44.304607: step 327, loss 0.000610857, acc 1
+2020-06-18T20:26:44.500730: step 328, loss 7.05842e-05, acc 1
+2020-06-18T20:26:44.706466: step 329, loss 6.8406e-05, acc 1
+2020-06-18T20:26:44.899183: step 330, loss 5.22693e-05, acc 1
+2020-06-18T20:26:45.092185: step 331, loss 4.92385e-05, acc 1
+2020-06-18T20:26:45.283545: step 332, loss 6.22286e-05, acc 1
+2020-06-18T20:26:45.487970: step 333, loss 4.8746e-05, acc 1
+2020-06-18T20:26:45.679869: step 334, loss 4.45347e-05, acc 1
+2020-06-18T20:26:45.868156: step 335, loss 5.22288e-05, acc 1
+2020-06-18T20:26:46.061855: step 336, loss 4.30924e-05, acc 1
+2020-06-18T20:26:46.273623: step 337, loss 4.00261e-05, acc 1
+2020-06-18T20:26:46.486933: step 338, loss 4.25343e-05, acc 1
+2020-06-18T20:26:46.681869: step 339, loss 3.59983e-05, acc 1
+2020-06-18T20:26:46.889981: step 340, loss 4.597e-05, acc 1
+2020-06-18T20:26:47.088676: step 341, loss 3.27149e-05, acc 1
+2020-06-18T20:26:47.279464: step 342, loss 3.04892e-05, acc 1
+2020-06-18T20:26:47.475121: step 343, loss 4.10064e-05, acc 1
+2020-06-18T20:26:47.661217: step 344, loss 0.00375431, acc 1
+2020-06-18T20:26:47.849827: step 345, loss 4.65782e-05, acc 1
+2020-06-18T20:26:48.033099: step 346, loss 5.24764e-05, acc 1
+2020-06-18T20:26:48.246691: step 347, loss 0.00445781, acc 1
+2020-06-18T20:26:48.453147: step 348, loss 0.000100711, acc 1
+2020-06-18T20:26:48.656094: step 349, loss 0.000133602, acc 1
+2020-06-18T20:26:48.849516: step 350, loss 0.000198894, acc 1
+2020-06-18T20:26:49.057147: step 351, loss 0.000554974, acc 1
+2020-06-18T20:26:49.255029: step 352, loss 0.000313889, acc 1
+2020-06-18T20:26:49.467346: step 353, loss 0.00197828, acc 1
+2020-06-18T20:26:49.663440: step 354, loss 0.000422205, acc 1
+2020-06-18T20:26:49.756395: step 355, loss 0.000276453, acc 1
+2020-06-18T20:26:49.972788: step 356, loss 0.00123563, acc 1
+2020-06-18T20:26:50.162540: step 357, loss 0.000358554, acc 1
+2020-06-18T20:26:50.356639: step 358, loss 0.000431052, acc 1
+2020-06-18T20:26:50.566830: step 359, loss 0.000321088, acc 1
+2020-06-18T20:26:50.757882: step 360, loss 0.000669318, acc 1
+2020-06-18T20:26:50.957794: step 361, loss 0.000178627, acc 1
+2020-06-18T20:26:51.163154: step 362, loss 0.000171929, acc 1
+2020-06-18T20:26:51.357882: step 363, loss 0.000139796, acc 1
+2020-06-18T20:26:51.579771: step 364, loss 0.000146303, acc 1
+2020-06-18T20:26:51.796799: step 365, loss 0.000110195, acc 1
+2020-06-18T20:26:51.992092: step 366, loss 6.55708e-05, acc 1
+2020-06-18T20:26:52.198980: step 367, loss 9.99868e-05, acc 1
+2020-06-18T20:26:52.406870: step 368, loss 9.4885e-05, acc 1
+2020-06-18T20:26:52.604461: step 369, loss 7.32695e-05, acc 1
+2020-06-18T20:26:52.799893: step 370, loss 6.36324e-05, acc 1
+2020-06-18T20:26:52.996300: step 371, loss 5.24361e-05, acc 1
+2020-06-18T20:26:53.188060: step 372, loss 6.62322e-05, acc 1
+2020-06-18T20:26:53.381982: step 373, loss 8.64141e-05, acc 1
+2020-06-18T20:26:53.570953: step 374, loss 4.10559e-05, acc 1
+2020-06-18T20:26:53.778210: step 375, loss 4.65277e-05, acc 1
+2020-06-18T20:26:53.969861: step 376, loss 0.0385013, acc 0.992188
+2020-06-18T20:26:54.163335: step 377, loss 9.19989e-05, acc 1
+2020-06-18T20:26:54.353779: step 378, loss 0.000180651, acc 1
+2020-06-18T20:26:54.575167: step 379, loss 0.000237036, acc 1
+2020-06-18T20:26:54.770847: step 380, loss 0.000258547, acc 1
+2020-06-18T20:26:54.979648: step 381, loss 0.0002944, acc 1
+2020-06-18T20:26:55.166566: step 382, loss 0.000534248, acc 1
+2020-06-18T20:26:55.368056: step 383, loss 0.000480926, acc 1
+2020-06-18T20:26:55.566441: step 384, loss 0.000518316, acc 1
+2020-06-18T20:26:55.772927: step 385, loss 0.00124168, acc 1
+2020-06-18T20:26:55.960127: step 386, loss 0.000717613, acc 1
+2020-06-18T20:26:56.157354: step 387, loss 0.000595325, acc 1
+2020-06-18T20:26:56.348133: step 388, loss 0.000540871, acc 1
+2020-06-18T20:26:56.553634: step 389, loss 0.000444105, acc 1
+2020-06-18T20:26:56.746635: step 390, loss 0.000530067, acc 1
+2020-06-18T20:26:56.945105: step 391, loss 0.000412748, acc 1
+2020-06-18T20:26:57.152351: step 392, loss 0.000595014, acc 1
+2020-06-18T20:26:57.342080: step 393, loss 0.000419771, acc 1
+2020-06-18T20:26:57.541798: step 394, loss 0.000195626, acc 1
+2020-06-18T20:26:57.744688: step 395, loss 0.000322078, acc 1
+2020-06-18T20:26:57.945563: step 396, loss 0.000511386, acc 1
+2020-06-18T20:26:58.142228: step 397, loss 0.000139394, acc 1
+2020-06-18T20:26:58.368796: step 398, loss 9.80185e-05, acc 1
+2020-06-18T20:26:58.568860: step 399, loss 8.06647e-05, acc 1
+2020-06-18T20:26:58.766516: step 400, loss 0.000172361, acc 1
+
+Evaluation:
+2020-06-18T20:26:58.982990: step 400, loss 8.29812e-05, acc 1
+
+2020-06-18T20:26:59.185280: step 401, loss 0.000109546, acc 1
+2020-06-18T20:26:59.378713: step 402, loss 9.08528e-05, acc 1
+2020-06-18T20:26:59.564839: step 403, loss 5.43983e-05, acc 1
+2020-06-18T20:26:59.766622: step 404, loss 5.76835e-05, acc 1
+2020-06-18T20:26:59.971023: step 405, loss 5.03513e-05, acc 1
+2020-06-18T20:27:00.162470: step 406, loss 4.1037e-05, acc 1
+2020-06-18T20:27:00.354637: step 407, loss 5.35703e-05, acc 1
+2020-06-18T20:27:00.567515: step 408, loss 4.58944e-05, acc 1
+2020-06-18T20:27:00.760228: step 409, loss 3.70355e-05, acc 1
+2020-06-18T20:27:00.970408: step 410, loss 0.000450816, acc 1
+2020-06-18T20:27:01.165812: step 411, loss 2.84666e-05, acc 1
+2020-06-18T20:27:01.364153: step 412, loss 3.00427e-05, acc 1
+2020-06-18T20:27:01.565086: step 413, loss 3.54384e-05, acc 1
+2020-06-18T20:27:01.775961: step 414, loss 0.000965796, acc 1
+2020-06-18T20:27:01.983064: step 415, loss 5.41067e-05, acc 1
+2020-06-18T20:27:02.171439: step 416, loss 4.16475e-05, acc 1
+2020-06-18T20:27:02.380435: step 417, loss 4.00327e-05, acc 1
+2020-06-18T20:27:02.578521: step 418, loss 3.40567e-05, acc 1
+2020-06-18T20:27:02.770849: step 419, loss 3.62751e-05, acc 1
+2020-06-18T20:27:02.956315: step 420, loss 4.03416e-05, acc 1
+2020-06-18T20:27:03.161736: step 421, loss 4.09031e-05, acc 1
+2020-06-18T20:27:03.365137: step 422, loss 3.88941e-05, acc 1
+2020-06-18T20:27:03.580969: step 423, loss 4.23591e-05, acc 1
+2020-06-18T20:27:03.817212: step 424, loss 7.31587e-05, acc 1
+2020-06-18T20:27:04.056903: step 425, loss 3.18029e-05, acc 1
+2020-06-18T20:27:04.164620: step 426, loss 2.15998e-05, acc 1
+2020-06-18T20:27:04.376671: step 427, loss 4.64325e-05, acc 1
+2020-06-18T20:27:04.580145: step 428, loss 4.85183e-05, acc 1
+2020-06-18T20:27:04.834201: step 429, loss 4.03972e-05, acc 1
+2020-06-18T20:27:05.042303: step 430, loss 3.37139e-05, acc 1
+2020-06-18T20:27:05.247738: step 431, loss 3.53857e-05, acc 1
+2020-06-18T20:27:05.453408: step 432, loss 4.31414e-05, acc 1
+2020-06-18T20:27:05.649953: step 433, loss 3.44156e-05, acc 1
+2020-06-18T20:27:05.836893: step 434, loss 3.32043e-05, acc 1
+2020-06-18T20:27:06.028951: step 435, loss 3.77367e-05, acc 1
+2020-06-18T20:27:06.217602: step 436, loss 3.83496e-05, acc 1
+2020-06-18T20:27:06.414510: step 437, loss 4.22864e-05, acc 1
+2020-06-18T20:27:06.594959: step 438, loss 3.39827e-05, acc 1
+2020-06-18T20:27:06.853475: step 439, loss 4.60659e-05, acc 1
+2020-06-18T20:27:07.074965: step 440, loss 3.60941e-05, acc 1
+2020-06-18T20:27:07.350330: step 441, loss 3.47664e-05, acc 1
+2020-06-18T20:27:07.675600: step 442, loss 2.79998e-05, acc 1
+2020-06-18T20:27:07.883637: step 443, loss 2.79634e-05, acc 1
+2020-06-18T20:27:08.089355: step 444, loss 4.06401e-05, acc 1
+2020-06-18T20:27:08.280827: step 445, loss 3.04779e-05, acc 1
+2020-06-18T20:27:08.507667: step 446, loss 2.97392e-05, acc 1
+2020-06-18T20:27:08.699472: step 447, loss 3.10538e-05, acc 1
+2020-06-18T20:27:08.870562: step 448, loss 3.24662e-05, acc 1
+2020-06-18T20:27:09.040618: step 449, loss 3.17444e-05, acc 1
+2020-06-18T20:27:09.210700: step 450, loss 3.09833e-05, acc 1
+2020-06-18T20:27:09.382578: step 451, loss 2.56884e-05, acc 1
+2020-06-18T20:27:09.556617: step 452, loss 3.40596e-05, acc 1
+2020-06-18T20:27:09.728004: step 453, loss 3.20775e-05, acc 1
+2020-06-18T20:27:09.912526: step 454, loss 2.44928e-05, acc 1
+2020-06-18T20:27:10.125197: step 455, loss 0.0377531, acc 0.992188
+2020-06-18T20:27:10.343911: step 456, loss 6.46091e-05, acc 1
+2020-06-18T20:27:10.523431: step 457, loss 0.000101884, acc 1
+2020-06-18T20:27:10.696933: step 458, loss 0.000193913, acc 1
+2020-06-18T20:27:10.866544: step 459, loss 0.000266997, acc 1
+2020-06-18T20:27:11.056563: step 460, loss 0.000493036, acc 1
+2020-06-18T20:27:11.220932: step 461, loss 0.00102959, acc 1
+2020-06-18T20:27:11.391807: step 462, loss 0.000856623, acc 1
+2020-06-18T20:27:11.562105: step 463, loss 0.00120503, acc 1
+2020-06-18T20:27:11.729011: step 464, loss 0.00438623, acc 1
+2020-06-18T20:27:11.892541: step 465, loss 0.000707003, acc 1
+2020-06-18T20:27:12.052778: step 466, loss 0.000658092, acc 1
+2020-06-18T20:27:12.220814: step 467, loss 0.000526299, acc 1
+2020-06-18T20:27:12.390969: step 468, loss 0.000219312, acc 1
+2020-06-18T20:27:12.553620: step 469, loss 0.000149968, acc 1
+2020-06-18T20:27:12.717250: step 470, loss 0.000143105, acc 1
+2020-06-18T20:27:12.880389: step 471, loss 0.000113252, acc 1
+2020-06-18T20:27:13.042887: step 472, loss 8.55875e-05, acc 1
+2020-06-18T20:27:13.204375: step 473, loss 6.35871e-05, acc 1
+2020-06-18T20:27:13.365352: step 474, loss 6.02776e-05, acc 1
+2020-06-18T20:27:13.530187: step 475, loss 5.31788e-05, acc 1
+2020-06-18T20:27:13.694550: step 476, loss 4.00322e-05, acc 1
+2020-06-18T20:27:13.855849: step 477, loss 3.60264e-05, acc 1
+2020-06-18T20:27:14.018458: step 478, loss 3.34203e-05, acc 1
+2020-06-18T20:27:14.182560: step 479, loss 3.91073e-05, acc 1
+2020-06-18T20:27:14.346479: step 480, loss 2.79383e-05, acc 1
+2020-06-18T20:27:14.508523: step 481, loss 2.75892e-05, acc 1
+2020-06-18T20:27:14.666740: step 482, loss 3.3497e-05, acc 1
+2020-06-18T20:27:14.833233: step 483, loss 2.48312e-05, acc 1
+2020-06-18T20:27:14.995304: step 484, loss 2.16113e-05, acc 1
+2020-06-18T20:27:15.167479: step 485, loss 1.96922e-05, acc 1
+2020-06-18T20:27:15.334522: step 486, loss 1.51177e-05, acc 1
+2020-06-18T20:27:15.504097: step 487, loss 0.0044649, acc 1
+2020-06-18T20:27:15.674741: step 488, loss 2.78563e-05, acc 1
+2020-06-18T20:27:15.838899: step 489, loss 2.75146e-05, acc 1
+2020-06-18T20:27:16.003319: step 490, loss 3.85906e-05, acc 1
+2020-06-18T20:27:16.170519: step 491, loss 5.73337e-05, acc 1
+2020-06-18T20:27:16.335886: step 492, loss 0.000901742, acc 1
+2020-06-18T20:27:16.505703: step 493, loss 8.40404e-05, acc 1
+2020-06-18T20:27:16.673908: step 494, loss 0.000127728, acc 1
+2020-06-18T20:27:16.842188: step 495, loss 0.000144245, acc 1
+2020-06-18T20:27:17.007979: step 496, loss 0.000125809, acc 1
+2020-06-18T20:27:17.094115: step 497, loss 0.000245265, acc 1
+2020-06-18T20:27:17.264015: step 498, loss 0.000232809, acc 1
+2020-06-18T20:27:17.429135: step 499, loss 0.000258506, acc 1
+2020-06-18T20:27:17.597280: step 500, loss 0.000244798, acc 1
+
+Evaluation:
+2020-06-18T20:27:17.779243: step 500, loss 0.000261295, acc 1
+
+2020-06-18T20:27:17.946662: step 501, loss 0.000275822, acc 1
+2020-06-18T20:27:18.111949: step 502, loss 0.000231796, acc 1
+2020-06-18T20:27:18.275890: step 503, loss 0.00761714, acc 0.992188
+2020-06-18T20:27:18.441983: step 504, loss 0.000496393, acc 1
+2020-06-18T20:27:18.609672: step 505, loss 0.000768903, acc 1
+2020-06-18T20:27:18.774580: step 506, loss 0.00110447, acc 1
+2020-06-18T20:27:18.936897: step 507, loss 0.000875517, acc 1
+2020-06-18T20:27:19.104696: step 508, loss 0.0109686, acc 0.992188
+2020-06-18T20:27:19.261477: step 509, loss 0.000464646, acc 1
+2020-06-18T20:27:19.424089: step 510, loss 0.000201405, acc 1
+2020-06-18T20:27:19.580094: step 511, loss 0.000102255, acc 1
+2020-06-18T20:27:19.745890: step 512, loss 6.69188e-05, acc 1
+2020-06-18T20:27:19.908729: step 513, loss 4.93647e-05, acc 1
+2020-06-18T20:27:20.074303: step 514, loss 2.45492e-05, acc 1
+2020-06-18T20:27:20.239464: step 515, loss 2.50935e-05, acc 1
+2020-06-18T20:27:20.402421: step 516, loss 1.52751e-05, acc 1
+2020-06-18T20:27:20.562791: step 517, loss 1.04678e-05, acc 1
+2020-06-18T20:27:20.722228: step 518, loss 1.06159e-05, acc 1
+2020-06-18T20:27:20.883700: step 519, loss 3.2556e-05, acc 1
+2020-06-18T20:27:21.043663: step 520, loss 7.82856e-06, acc 1
+2020-06-18T20:27:21.202473: step 521, loss 0.000224144, acc 1
+2020-06-18T20:27:21.364112: step 522, loss 5.95294e-06, acc 1
+2020-06-18T20:27:21.524022: step 523, loss 4.02141e-06, acc 1
+2020-06-18T20:27:21.726714: step 524, loss 0.00928893, acc 0.992188
+2020-06-18T20:27:21.882711: step 525, loss 1.23834e-05, acc 1
+2020-06-18T20:27:22.041643: step 526, loss 1.89442e-05, acc 1
+2020-06-18T20:27:22.203323: step 527, loss 3.38829e-05, acc 1
+2020-06-18T20:27:22.366829: step 528, loss 4.7772e-05, acc 1
+2020-06-18T20:27:22.530754: step 529, loss 6.82951e-05, acc 1
+2020-06-18T20:27:22.696901: step 530, loss 0.000122364, acc 1
+2020-06-18T20:27:22.861330: step 531, loss 0.000169643, acc 1
+2020-06-18T20:27:23.023450: step 532, loss 0.000209141, acc 1
+2020-06-18T20:27:23.187902: step 533, loss 0.000242012, acc 1
+2020-06-18T20:27:23.355326: step 534, loss 0.000332608, acc 1
+2020-06-18T20:27:23.522196: step 535, loss 0.000388519, acc 1
+2020-06-18T20:27:23.684998: step 536, loss 0.000430155, acc 1
+2020-06-18T20:27:23.857125: step 537, loss 0.00050096, acc 1
+2020-06-18T20:27:24.018844: step 538, loss 0.000527419, acc 1
+2020-06-18T20:27:24.181569: step 539, loss 0.000460893, acc 1
+2020-06-18T20:27:24.346094: step 540, loss 0.000692495, acc 1
+2020-06-18T20:27:24.512837: step 541, loss 0.0004425, acc 1
+2020-06-18T20:27:24.676503: step 542, loss 0.000705639, acc 1
+2020-06-18T20:27:24.843513: step 543, loss 0.000601342, acc 1
+2020-06-18T20:27:25.004576: step 544, loss 0.000543001, acc 1
+2020-06-18T20:27:25.163974: step 545, loss 0.00204852, acc 1
+2020-06-18T20:27:25.333721: step 546, loss 0.000555155, acc 1
+2020-06-18T20:27:25.502722: step 547, loss 0.000416163, acc 1
+2020-06-18T20:27:25.664134: step 548, loss 0.000453821, acc 1
+2020-06-18T20:27:25.825110: step 549, loss 0.000337569, acc 1
+2020-06-18T20:27:25.982791: step 550, loss 0.000364156, acc 1
+2020-06-18T20:27:26.144423: step 551, loss 0.000277983, acc 1
+2020-06-18T20:27:26.304233: step 552, loss 0.000236546, acc 1
+2020-06-18T20:27:26.467085: step 553, loss 0.000222282, acc 1
+2020-06-18T20:27:26.625567: step 554, loss 0.000186764, acc 1
+2020-06-18T20:27:26.783806: step 555, loss 0.000212346, acc 1
+2020-06-18T20:27:26.947802: step 556, loss 0.000207597, acc 1
+2020-06-18T20:27:27.105087: step 557, loss 0.00016979, acc 1
+2020-06-18T20:27:27.263252: step 558, loss 0.000191583, acc 1
+2020-06-18T20:27:27.423492: step 559, loss 0.000144096, acc 1
+2020-06-18T20:27:27.586479: step 560, loss 0.000121064, acc 1
+2020-06-18T20:27:27.746577: step 561, loss 0.000128809, acc 1
+2020-06-18T20:27:27.907244: step 562, loss 9.77907e-05, acc 1
+2020-06-18T20:27:28.068256: step 563, loss 0.000110259, acc 1
+2020-06-18T20:27:28.233476: step 564, loss 0.00010142, acc 1
+2020-06-18T20:27:28.401276: step 565, loss 8.76477e-05, acc 1
+2020-06-18T20:27:28.565230: step 566, loss 0.000105762, acc 1
+2020-06-18T20:27:28.730320: step 567, loss 0.000101873, acc 1
+2020-06-18T20:27:28.812839: step 568, loss 7.5076e-05, acc 1
+2020-06-18T20:27:28.978604: step 569, loss 6.76561e-05, acc 1
+2020-06-18T20:27:29.141996: step 570, loss 6.52341e-05, acc 1
+2020-06-18T20:27:29.308042: step 571, loss 6.60624e-05, acc 1
+2020-06-18T20:27:29.489382: step 572, loss 6.60933e-05, acc 1
+2020-06-18T20:27:29.654013: step 573, loss 5.90111e-05, acc 1
+2020-06-18T20:27:29.855274: step 574, loss 6.93132e-05, acc 1
+2020-06-18T20:27:30.014723: step 575, loss 5.67936e-05, acc 1
+2020-06-18T20:27:30.183285: step 576, loss 4.95919e-05, acc 1
+2020-06-18T20:27:30.347332: step 577, loss 0.029314, acc 0.992188
+2020-06-18T20:27:30.513805: step 578, loss 6.16903e-05, acc 1
+2020-06-18T20:27:30.676825: step 579, loss 0.000111002, acc 1
+2020-06-18T20:27:30.838539: step 580, loss 0.000137982, acc 1
+2020-06-18T20:27:31.000519: step 581, loss 0.000177344, acc 1
+2020-06-18T20:27:31.170781: step 582, loss 0.000156072, acc 1
+2020-06-18T20:27:31.335697: step 583, loss 0.000222851, acc 1
+2020-06-18T20:27:31.504109: step 584, loss 0.000301264, acc 1
+2020-06-18T20:27:31.665805: step 585, loss 0.000294761, acc 1
+2020-06-18T20:27:31.829937: step 586, loss 0.000366379, acc 1
+2020-06-18T20:27:31.986148: step 587, loss 0.000415571, acc 1
+2020-06-18T20:27:32.144397: step 588, loss 0.000449498, acc 1
+2020-06-18T20:27:32.303345: step 589, loss 0.000386378, acc 1
+2020-06-18T20:27:32.465900: step 590, loss 0.000403687, acc 1
+2020-06-18T20:27:32.628277: step 591, loss 0.000356032, acc 1
+2020-06-18T20:27:32.793889: step 592, loss 0.00037067, acc 1
+2020-06-18T20:27:32.956725: step 593, loss 0.000476357, acc 1
+2020-06-18T20:27:33.119144: step 594, loss 0.000412273, acc 1
+2020-06-18T20:27:33.288189: step 595, loss 0.000393545, acc 1
+2020-06-18T20:27:33.458325: step 596, loss 0.000445194, acc 1
+2020-06-18T20:27:33.623475: step 597, loss 0.000334299, acc 1
+2020-06-18T20:27:33.822748: step 598, loss 0.000275384, acc 1
+2020-06-18T20:27:33.989654: step 599, loss 0.000294155, acc 1
+2020-06-18T20:27:34.167642: step 600, loss 0.000260461, acc 1
+
+Evaluation:
+2020-06-18T20:27:34.356245: step 600, loss 0.000226957, acc 1
+
+2020-06-18T20:27:34.532861: step 601, loss 0.000192504, acc 1
+2020-06-18T20:27:34.700509: step 602, loss 0.000191622, acc 1
+2020-06-18T20:27:34.929574: step 603, loss 0.000190496, acc 1
+2020-06-18T20:27:35.154392: step 604, loss 0.000199944, acc 1
+2020-06-18T20:27:35.369437: step 605, loss 0.000177762, acc 1
+2020-06-18T20:27:35.558350: step 606, loss 0.000143691, acc 1
+2020-06-18T20:27:35.753229: step 607, loss 0.000142634, acc 1
+2020-06-18T20:27:35.975503: step 608, loss 0.000128798, acc 1
+2020-06-18T20:27:36.170255: step 609, loss 0.000113939, acc 1
+2020-06-18T20:27:36.404394: step 610, loss 0.000110172, acc 1
+2020-06-18T20:27:36.616759: step 611, loss 0.000112014, acc 1
+2020-06-18T20:27:36.809979: step 612, loss 0.000118101, acc 1
+2020-06-18T20:27:37.104358: step 613, loss 9.22018e-05, acc 1
+2020-06-18T20:27:37.405078: step 614, loss 0.000137224, acc 1
+2020-06-18T20:27:37.733643: step 615, loss 0.000108462, acc 1
+2020-06-18T20:27:37.985553: step 616, loss 6.58789e-05, acc 1
+2020-06-18T20:27:38.227997: step 617, loss 5.95947e-05, acc 1
+2020-06-18T20:27:38.418734: step 618, loss 8.06092e-05, acc 1
+2020-06-18T20:27:38.597114: step 619, loss 5.73567e-05, acc 1
+2020-06-18T20:27:38.772283: step 620, loss 6.13471e-05, acc 1
+2020-06-18T20:27:38.947697: step 621, loss 6.59901e-05, acc 1
+2020-06-18T20:27:39.134658: step 622, loss 4.24295e-05, acc 1
+2020-06-18T20:27:39.351553: step 623, loss 4.8016e-05, acc 1
+2020-06-18T20:27:39.649723: step 624, loss 5.08798e-05, acc 1
+2020-06-18T20:27:39.896123: step 625, loss 5.68097e-05, acc 1
+2020-06-18T20:27:40.068966: step 626, loss 3.66753e-05, acc 1
+2020-06-18T20:27:40.236679: step 627, loss 4.80678e-05, acc 1
+2020-06-18T20:27:40.405774: step 628, loss 4.4648e-05, acc 1
+2020-06-18T20:27:40.573659: step 629, loss 4.39909e-05, acc 1
+2020-06-18T20:27:40.750358: step 630, loss 4.25328e-05, acc 1
+2020-06-18T20:27:40.938783: step 631, loss 3.34197e-05, acc 1
+2020-06-18T20:27:41.129897: step 632, loss 3.13867e-05, acc 1
+2020-06-18T20:27:41.296672: step 633, loss 3.12663e-05, acc 1
+2020-06-18T20:27:41.466831: step 634, loss 4.25183e-05, acc 1
+2020-06-18T20:27:41.639422: step 635, loss 3.60532e-05, acc 1
+2020-06-18T20:27:41.810631: step 636, loss 3.94464e-05, acc 1
+2020-06-18T20:27:41.981066: step 637, loss 2.71251e-05, acc 1
+2020-06-18T20:27:42.149544: step 638, loss 3.63175e-05, acc 1
+2020-06-18T20:27:42.233233: step 639, loss 3.70927e-05, acc 1
+2020-06-18T20:27:42.399151: step 640, loss 3.69357e-05, acc 1
+2020-06-18T20:27:42.567316: step 641, loss 2.93368e-05, acc 1
+2020-06-18T20:27:42.740335: step 642, loss 3.1534e-05, acc 1
+2020-06-18T20:27:42.915481: step 643, loss 3.25766e-05, acc 1
+2020-06-18T20:27:43.081173: step 644, loss 2.43337e-05, acc 1
+2020-06-18T20:27:43.250594: step 645, loss 2.89953e-05, acc 1
+2020-06-18T20:27:43.425484: step 646, loss 3.12656e-05, acc 1
+2020-06-18T20:27:43.593501: step 647, loss 2.83836e-05, acc 1
+2020-06-18T20:27:43.790075: step 648, loss 2.64983e-05, acc 1
+2020-06-18T20:27:43.995472: step 649, loss 2.86229e-05, acc 1
+2020-06-18T20:27:44.183742: step 650, loss 0.000402027, acc 1
+2020-06-18T20:27:44.360622: step 651, loss 2.61075e-05, acc 1
+2020-06-18T20:27:44.541251: step 652, loss 2.10844e-05, acc 1
+2020-06-18T20:27:44.711454: step 653, loss 2.39731e-05, acc 1
+2020-06-18T20:27:44.878805: step 654, loss 2.32858e-05, acc 1
+2020-06-18T20:27:45.041327: step 655, loss 3.21958e-05, acc 1
+2020-06-18T20:27:45.205957: step 656, loss 2.67509e-05, acc 1
+2020-06-18T20:27:45.367793: step 657, loss 2.45413e-05, acc 1
+2020-06-18T20:27:45.531173: step 658, loss 2.54545e-05, acc 1
+2020-06-18T20:27:45.705549: step 659, loss 1.99427e-05, acc 1
+2020-06-18T20:27:45.875232: step 660, loss 3.12049e-05, acc 1
+2020-06-18T20:27:46.042599: step 661, loss 2.77344e-05, acc 1
+2020-06-18T20:27:46.211504: step 662, loss 2.56383e-05, acc 1
+2020-06-18T20:27:46.380264: step 663, loss 3.02341e-05, acc 1
+2020-06-18T20:27:46.547742: step 664, loss 2.0356e-05, acc 1
+2020-06-18T20:27:46.725048: step 665, loss 2.37347e-05, acc 1
+2020-06-18T20:27:46.919732: step 666, loss 2.01283e-05, acc 1
+2020-06-18T20:27:47.091090: step 667, loss 2.38969e-05, acc 1
+2020-06-18T20:27:47.270563: step 668, loss 2.74356e-05, acc 1
+2020-06-18T20:27:47.444390: step 669, loss 2.70174e-05, acc 1
+2020-06-18T20:27:47.620591: step 670, loss 1.99956e-05, acc 1
+2020-06-18T20:27:47.798835: step 671, loss 2.62726e-05, acc 1
+2020-06-18T20:27:47.978569: step 672, loss 2.25112e-05, acc 1
+2020-06-18T20:27:48.151662: step 673, loss 2.29887e-05, acc 1
+2020-06-18T20:27:48.329083: step 674, loss 1.7688e-05, acc 1
+2020-06-18T20:27:48.504790: step 675, loss 2.3574e-05, acc 1
+2020-06-18T20:27:48.671066: step 676, loss 1.80223e-05, acc 1
+2020-06-18T20:27:48.847644: step 677, loss 2.51484e-05, acc 1
+2020-06-18T20:27:49.028370: step 678, loss 1.77635e-05, acc 1
+2020-06-18T20:27:49.204135: step 679, loss 2.44203e-05, acc 1
+2020-06-18T20:27:49.378572: step 680, loss 2.14636e-05, acc 1
+2020-06-18T20:27:49.548941: step 681, loss 2.12556e-05, acc 1
+2020-06-18T20:27:49.720681: step 682, loss 2.16765e-05, acc 1
+2020-06-18T20:27:49.882832: step 683, loss 1.88754e-05, acc 1
+2020-06-18T20:27:50.046652: step 684, loss 2.21236e-05, acc 1
+2020-06-18T20:27:50.216235: step 685, loss 2.00488e-05, acc 1
+2020-06-18T20:27:50.378399: step 686, loss 1.45934e-05, acc 1
+2020-06-18T20:27:50.542442: step 687, loss 2.15723e-05, acc 1
+2020-06-18T20:27:50.742197: step 688, loss 2.0589e-05, acc 1
+2020-06-18T20:27:50.912168: step 689, loss 1.58953e-05, acc 1
+2020-06-18T20:27:51.076329: step 690, loss 1.78446e-05, acc 1
+2020-06-18T20:27:51.238833: step 691, loss 6.44216e-05, acc 1
+2020-06-18T20:27:51.402315: step 692, loss 1.67019e-05, acc 1
+2020-06-18T20:27:51.573580: step 693, loss 1.52174e-05, acc 1
+2020-06-18T20:27:51.753613: step 694, loss 1.88214e-05, acc 1
+2020-06-18T20:27:51.921502: step 695, loss 2.19104e-05, acc 1
+2020-06-18T20:27:52.094465: step 696, loss 1.93661e-05, acc 1
+2020-06-18T20:27:52.260040: step 697, loss 1.87514e-05, acc 1
+2020-06-18T20:27:52.422423: step 698, loss 1.74432e-05, acc 1
+2020-06-18T20:27:52.586039: step 699, loss 1.29152e-05, acc 1
+2020-06-18T20:27:52.754762: step 700, loss 1.67819e-05, acc 1
+
+Evaluation:
+2020-06-18T20:27:52.928412: step 700, loss 1.71697e-05, acc 1
+
+2020-06-18T20:27:53.096269: step 701, loss 1.37572e-05, acc 1
+2020-06-18T20:27:53.259692: step 702, loss 1.21935e-05, acc 1
+2020-06-18T20:27:53.422589: step 703, loss 1.59586e-05, acc 1
+2020-06-18T20:27:53.587738: step 704, loss 1.73743e-05, acc 1
+2020-06-18T20:27:53.754996: step 705, loss 1.48468e-05, acc 1
+2020-06-18T20:27:53.918445: step 706, loss 1.79851e-05, acc 1
+2020-06-18T20:27:54.083140: step 707, loss 1.84954e-05, acc 1
+2020-06-18T20:27:54.246798: step 708, loss 1.87999e-05, acc 1
+2020-06-18T20:27:54.417396: step 709, loss 1.52407e-05, acc 1
+2020-06-18T20:27:54.503744: step 710, loss 1.28206e-05, acc 1
+2020-06-18T20:27:54.678991: step 710, loss 4.53841e-05, acc 1

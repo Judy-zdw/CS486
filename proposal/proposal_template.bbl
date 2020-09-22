@@ -1,0 +1,51 @@
+\begin{thebibliography}{}
+
+\bibitem[\protect\citeauthoryear{Breen}{2020}]{breen_2020}
+Breen, K.
+\newblock 2020.
+\newblock Keeping up social distancing could pose challenge as coronavirus
+  pandemic wears on.
+
+\bibitem[\protect\citeauthoryear{Kim and Hovy}{2004}]{kim_hovy_2004}
+Kim, S.-M., and Hovy, E.
+\newblock 2004.
+\newblock Determining the sentiment of opinions. proceedings of the 20th
+  international conference on computational linguistics (coling 04).
+\newblock {\em Association for Computational Linguistics} 1367.
+
+\bibitem[\protect\citeauthoryear{Lei \bgroup et al\mbox.\egroup
+  }{2011}]{lei_ghosh_dekhil_hsu_lu_2011}
+Lei, Z.; Ghosh, R.; Dekhil, M.; Hsu, M.; and Lu, B.
+\newblock 2011.
+\newblock Combining lexicon-based and learning-based methods for twitter
+  sentiment analysis.
+\newblock {\em Hewlett-Packard Development Company, L.P.} (2011).
+
+\bibitem[\protect\citeauthoryear{Pang and Lee}{2008}]{pang_lee_2008}
+Pang, B., and Lee, L.
+\newblock 2008.
+\newblock Opinion mining and sentiment analysis.
+\newblock {\em Foundations and Trends in Information Retrieval} (2):1?135.
+
+\bibitem[\protect\citeauthoryear{Severyn and
+  Moschitti}{2015}]{severyn_moschitti_2015}
+Severyn, A., and Moschitti, A.
+\newblock 2015.
+\newblock Twitter sentiment analysis with deep convolutional neural networks.
+\newblock {\em Association for Computing Machinery}.
+
+\bibitem[\protect\citeauthoryear{Sosa}{2017}]{sosa_2017}
+Sosa, P.~M.
+\newblock 2017.
+\newblock Twitter sentiment analysis using combined lstm-cnn models.
+\newblock {\em University of California, Santa Barbara}.
+
+\bibitem[\protect\citeauthoryear{Wan and Gao}{2015}]{wan_gao_2015}
+Wan, Y., and Gao, Q.
+\newblock 2015.
+\newblock An ensemble sentiment classification system of twitter data for
+  airline services analysis.
+\newblock {\em 2015 IEEE International Conference on Data Mining Workshop
+  (ICDMW)}.
+
+\end{thebibliography}
